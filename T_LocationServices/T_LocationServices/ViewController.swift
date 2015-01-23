@@ -30,6 +30,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //and starts receiving location updates from CoreLocation.
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
     
@@ -52,14 +53,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func displayLocationInfo(placemark: CLPlacemark){
-        if placemark != nil {
             // stop updating to conserve battery life
             locationManager.stopUpdatingLocation()
-            println(placemark.locality ? placemark.locality : "")
-            println(placemark.postalCode ? placemark.postalCode : "")
-            println(placemark.administrativeArea ? placemark.administrativeArea : "")
-            println(placemark.country ? placemark.country : "")
-        }
+            println(placemark.locality)
+            println(placemark.postalCode)
+            println(placemark.administrativeArea)
+            println(placemark.country)
+        
     }
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
