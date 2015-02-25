@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRE-cH-fvY">
-                                <rect key="frame" x="226" y="285" width="148" height="30"/>
+                                <rect key="frame" x="102" y="285" width="148" height="30"/>
                                 <color key="backgroundColor" red="0.062745101749897003" green="0.14117647707462311" blue="0.9803922176361084" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Get Current Location!">
                                     <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="findMyLocation:" destination="vXZ-lx-hvc" eventType="touchDragInside" id="hJb-8M-Adb"/>
+                                    <action selector="findMyLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Gt-NI-4A1"/>
                                 </connections>
                             </button>
                         </subviews>
